@@ -23,8 +23,8 @@ const Layout = ({ children, categories, article }) => (
         <div
           id="banner"
           className="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light uk-padding uk-margin"
-          data-src={article.image.url}
-          data-srcset={article.image.url}
+          /* data-src={article.image.url}
+          data-srcset={article.image.url} */
           data-uk-img
         >
           <h1>{article.title}</h1>
