@@ -1,14 +1,54 @@
+@font-face {
+    font-family: Nunito;
+    src: url("../fonts/Nunito-Regular.ttf");
+}
+
+:root {
+  /* Color Palette */
+  --blue: #0081D5;
+  --green: #03BD5B;
+  --green-two: #9DBF15;
+  --orange: #FF9947;
+  --red: #D1335B;
+  --purple: #A939B9;
+  --grey-one: #374355;
+  --grey-two: #3D4D65;
+  --grey-three: #53657D;
+  --grey-four: #8393A7;
+  --grey-five: #ADB9C9;
+  --grey-six: #C9D3DF;
+  --grey-seven: #EBEFF3;
+  --white: #ffffff;
+  /* Font */
+  --font-base: 'Nunito';
+}
+
+/* TODO: container & max width */
+
+body {
+  font-family: var(--font-base);
+  margin: 0;
+  padding: 0;
+}
+
 a {
   text-decoration: none;
 }
 
-h1 {
-  font-family: Staatliches;
-  font-size: 120px;
+#page-title {
+  height: 199px;
+  background: linear-gradient(149.84deg, #D73F59 0%, #A133D5 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 49px;
+  color: var(--white);
+  margin: 0;
 }
 
 #category {
-  font-family: Staatliches;
   font-weight: 500;
 }
 
@@ -30,10 +70,36 @@ h1 {
   line-height: 1.75;
 }
 
-.uk-navbar-container {
-  background: #fff !important;
-  font-family: Staatliches;
+/* Navigation */
+.navbar-container {
+  display: flex;
+  width: 100%;
+  padding: 20px 0;
 }
+
+.navbar-left {
+  width: 20%;
+  display: flex;
+  padding-left: 10px;
+}
+
+.navbar-right {
+  width: 80%;
+  justify-content: flex-end;
+  display: flex;
+}
+
+.navbar-nav {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-nav li {
+  padding-right: 10px;
+}
+/* End Navigation */
 
 img:hover {
   opacity: 1;

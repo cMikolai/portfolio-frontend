@@ -15,8 +15,8 @@ export async function getStaticProps() {
 export default function Home({ articles, categories }) {
   return (
     <Layout categories={categories}>
-      <h1>Strapi blog</h1>
-      <Articles articles={articles} />
+      <h1 id="page-title">Home</h1>
+      {/* <Articles articles={articles} /> */}
     </Layout>
   )
 }
