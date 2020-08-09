@@ -1,10 +1,11 @@
 import Head from 'next/head'
 import Nav from './nav'
+import Footer from './footer'
 
 const Layout = ({ children, categories, article }) => (
   <>
     <Head>
-      <title>Strapi blog</title>
+      <title>Portfolio</title>
     </Head>
 
     <Nav categories={categories} />
@@ -13,24 +14,26 @@ const Layout = ({ children, categories, article }) => (
     {article ? (
       <>
         <div
-          id="banner"
+          /* id="banner"
           className=""
           data-src={article.image.url}
           data-srcset={article.image.url}
-          data-uk-img
+          data-uk-img */
         >
-          <h1>{article.title}</h1>
+          <h1 id="page-title">{article.title}</h1>
         </div>
 
         <div className="section">
-          <div className="container">{children}</div>
+          <div className="container-article">{children}</div>
         </div>
       </>
     ) : (
       <div className="section">
-        <div className="container">{children}</div>
+        <div className="container-category">{children}</div>
       </div>
     )}
+
+    <Footer />
   </>
 )
 
