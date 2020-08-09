@@ -4,6 +4,7 @@ import Layout from '../components/layout'
 import { getArticles, getCategories } from '../lib/api'
 import Nav from '../components/nav'
 import Footer from '../components/footer'
+import { HomeBanner, WhiteHeart } from '../assets/images/svgs'
 
 export async function getStaticProps() {
   const articles = await getArticles()
@@ -19,11 +20,15 @@ export default function Home({ articles, categories }) {
     <div id='home-page'>
       <Nav categories={categories} />
       <div id="home-banner">
-        <div>
-          Front-End Web Developer
-
+        <div className="home-banner-inner">
+          <div className="home-banner-left">
+            <h1>Front-End Web Developer</h1>
+            <p>with a <WhiteHeart /> for ReactJS and UX</p>
+          </div>
+          <div className="home-banner-right">
+            <HomeBanner />
+          </div>
         </div>
-        <div>Image Right</div>
       </div>
 
       <div id="home-section-about_me">

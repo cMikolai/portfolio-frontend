@@ -130,8 +130,32 @@ img:hover {
   background: linear-gradient(149.84deg, #D73F59 0%, #A133D5 100%);
   color: var(--white);
   height: 100vh;
+  width: 100vw;
   display: flex;
   align-items: center;
+  justify-content: center;
+}
+
+.home-banner-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1024px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.home-banner-left {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 100%;
+}
+
+.home-banner-right {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
 }
 
 #home-section-about_me {
