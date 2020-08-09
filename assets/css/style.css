@@ -161,17 +161,29 @@ img:hover {
 #home-section-about_me {
   height: 100vh;
   display: flex;
+  align-items: center;
+}
+
+#home-section-about_me * {
+  text-align: center;
 }
 
 #home-section-latest_projects {
   height: 100vh;
   display: flex;
+  align-items: center;
   background-color: var(--grey-seven);
 }
 
 #home-section-latest_articles {
   height: 100vh;
   display: flex;
+  align-items: center;
+}
+
+.home-section-title {
+  color: var(--grey-one);
+  text-align: center;
 }
 /* End Home Page Specific Styles */
 
