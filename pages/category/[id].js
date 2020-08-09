@@ -14,8 +14,10 @@ export async function getStaticProps({ params }) {
 export default function Category({ category, categories }) {
   return (
     <Layout categories={categories}>
-      <h1>{category.name}</h1>
-      <Articles articles={category.articles} />
+      <h1 id="page-title">{category.name}</h1>
+      <div className="container">
+        <Articles articles={category.articles} />
+      </div>
     </Layout>
   )
 }

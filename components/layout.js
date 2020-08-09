@@ -1,44 +1,39 @@
 import Head from 'next/head'
 import Nav from './nav'
+import Footer from './footer'
 
 const Layout = ({ children, categories, article }) => (
   <>
     <Head>
-      <title>Strapi blog</title>
-      <link
-        rel="stylesheet"
-        href="https://fonts.googleapis.com/css?family=Staatliches"
-      />
-      <link
-        rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/uikit@3.2.3/dist/css/uikit.min.css"
-      />
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.2.0/js/uikit.min.js" />
-      <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.3/dist/js/uikit-icons.min.js" />
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.2.0/js/uikit.js" />
+      <title>Portfolio</title>
     </Head>
+
     <Nav categories={categories} />
+
+    {/*TODO: Tidy this up to always have the same page title layout but on home page */}
     {article ? (
       <>
         <div
-          id="banner"
-          className="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light uk-padding uk-margin"
+          /* id="banner"
+          className=""
           data-src={article.image.url}
           data-srcset={article.image.url}
-          data-uk-img
+          data-uk-img */
         >
-          <h1>{article.title}</h1>
+          <h1 id="page-title">{article.title}</h1>
         </div>
 
-        <div className="uk-section">
-          <div className="uk-container uk-container-small">{children}</div>
+        <div className="section">
+          <div className="container-article">{children}</div>
         </div>
       </>
     ) : (
-      <div className="uk-section">
-        <div className="uk-container uk-container-large">{children}</div>
+      <div className="section">
+        <div className="container-category">{children}</div>
       </div>
     )}
+
+    <Footer />
   </>
 )
 
