@@ -41,8 +41,13 @@ a {
   padding: 0 10px;
 }
 
+.container-category .container,
+.container-article .container {
+  padding: 60px 0;
+}
+
 #page-title {
-  height: 120px;
+  height: 150px;
   background: linear-gradient(149.84deg, #D73F59 0%, #A133D5 100%);
   display: flex;
   justify-content: center;
@@ -52,6 +57,19 @@ a {
   line-height: 49px;
   color: var(--white);
   margin: 0;
+  position: relative;
+}
+
+#page-title:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 30px;
+  margin: 0 auto;
+  height: 3px;
+  border-top: 3px solid var(--white);
+  width: 50px;
 }
 
 #category {
@@ -207,10 +225,18 @@ img:hover {
 }
 
 /* Cards */
-.cards {
+.cards,
+.cards_overview {
   display: flex;
   justify-content: space-between;
   width: 100%;
+}
+.cards_overview {
+  flex-wrap: wrap;
+}
+
+.cards_overview .card {
+  margin-bottom: 30px;
 }
 
 .card {
