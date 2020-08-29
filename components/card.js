@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 import Moment from 'react-moment'
-import Button from './Button'
+import Button from './button'
 
 const Card = ({ article }) => {
   return (
