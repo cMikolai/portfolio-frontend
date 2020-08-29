@@ -41,14 +41,20 @@ export default function Home({ articles, categories }) {
       <div id="home-section-latest_projects">
         <div className="container">
           <h2 className="home-section-title">Latest Projects</h2>
-          <HomeArticles articles={articles} categories='Projects' />
+          <HomeArticles
+            articles={articles}
+            categories='Projects'
+            /*limit="3"*/ />
         </div>
       </div>
 
       <div id="home-section-latest_articles">
         <div className="container">
           <h2 className="home-section-title">Latest Articles</h2>
-          <HomeArticles articles={articles} categories='Blog' />
+          <HomeArticles
+            articles={articles}
+            categories='Blog'
+            limit="3" />
         </div>
       </div>
 
