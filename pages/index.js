@@ -38,6 +38,8 @@ export default function Home({ articles, categories }) {
         </div>
       </div>
 
+      {/* TODO: Mobile view -->*/}
+
       <div id="home-section-latest_projects">
         <div className="container">
           <h2 className="home-section-title">Latest Projects</h2>
