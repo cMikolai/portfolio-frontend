@@ -148,6 +148,7 @@ img:hover {
   background: linear-gradient(149.84deg, #D73F59 0%, #A133D5 100%);
   color: var(--white);
   height: 100vh;
+  /* Todo: max height */
   width: 100vw;
   display: flex;
   align-items: center;
@@ -178,6 +179,7 @@ img:hover {
 
 #home-section-about_me {
   height: 100vh;
+  /* Todo: max height */
   display: flex;
   align-items: center;
   padding: 15px 0;
