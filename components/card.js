@@ -15,7 +15,7 @@ const Card = ({ article }) => {
           />
           <div className="card_inner_content">
             <p className="card_date">
-              <Moment format="MMM Do YYYY">{article.published_at}</Moment>
+              <Moment format="MMM Do YYYY">{article.published_date_at}</Moment>
             </p>
             <p className="card_title">
               {article.title}
