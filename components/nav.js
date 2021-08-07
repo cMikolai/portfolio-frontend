@@ -4,6 +4,7 @@ import Link from 'next/link'
 const Nav = ({ categories }) => {
   return (
     <div>
+      {/* TODO: mobile view */}
       <nav className="navbar-container">
         <div className="container">
           <div className="navbar-left">
