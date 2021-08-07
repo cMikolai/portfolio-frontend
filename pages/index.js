@@ -46,7 +46,7 @@ export default function Home({ articles, categories }) {
           <HomeArticles
             articles={articles}
             categories='Projects'
-            /*limit="3"*/ />
+            limit={3} />
         </div>
       </div>
 
@@ -56,7 +56,7 @@ export default function Home({ articles, categories }) {
           <HomeArticles
             articles={articles}
             categories='Blog'
-            limit="3" />
+            limit={3} />
         </div>
       </div>
 
