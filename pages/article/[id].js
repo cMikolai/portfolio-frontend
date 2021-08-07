@@ -17,7 +17,7 @@ export default function Article({ article, categories }) {
     <Layout categories={categories} article={article}>
       <ReactMarkdown source={article.content} />
       <p>
-        <Moment format="MMM Do YYYY">{article.published_at}</Moment>
+        <Moment format="MMM Do YYYY">{article.published_date_at}</Moment>
       </p>
     </Layout>
   )
